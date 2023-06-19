@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gameSDL1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="gameSDL1" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add directory="D:/SDL1/gameSDL1/gameSDL1/SDL_lib/SDL2_ttf_2_0_11 %281%29/SDL2_ttf_2_0_11/include" />
+					<Add directory="D:/SDL1/gameSDL1/gameSDL1/SDL_lib/SDL_mixer_1_2_12 %281%29/SDL_mixer_1_2_12/include" />
+					<Add directory="D:/SDL1/gameSDL1/gameSDL1/SDL_lib/SDL_image_1_2_4 %281%29/SDL_image_1_2_4/include" />
+					<Add directory="D:/SDL1/gameSDL1/gameSDL1/SDL_lib/SDL_1_2_15 %281%29/SDL_1_2_15/include" />
+					<Add directory="$(IncludePath)" />
+				</Compiler>
+				<Linker>
+					<Add library="SDL.lib" />
+					<Add library="SDLmain.lib" />
+					<Add library="SDL_image.lib" />
+					<Add library="SDL_mixer.lib" />
+					<Add library="SDL_ttf.lib" />
+					<Add directory="D:/SDL1/gameSDL1/gameSDL1/SDL_lib/SDL2_ttf_2_0_11 %281%29/SDL2_ttf_2_0_11/lib/x86" />
+					<Add directory="D:/SDL1/gameSDL1/gameSDL1/SDL_lib/SDL_mixer_1_2_12 %281%29/SDL_mixer_1_2_12/lib/x86" />
+					<Add directory="D:/SDL1/gameSDL1/gameSDL1/SDL_lib/SDL_image_1_2_4 %281%29/SDL_image_1_2_4/lib" />
+					<Add directory="D:/SDL1/gameSDL1/gameSDL1/SDL_lib/SDL_1_2_15 %281%29/SDL_1_2_15/lib/x86" />
+					<Add directory="$(LibraryPath)" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="gameSDL1" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="Amo.cpp" />
+		<Unit filename="Amo.h" />
+		<Unit filename="BaseObject.cpp" />
+		<Unit filename="BaseObject.h" />
+		<Unit filename="Commonfunc.cpp" />
+		<Unit filename="Commonfunc.h" />
+		<Unit filename="MainObject.cpp" />
+		<Unit filename="MainObject.h" />
+		<Unit filename="gameSDL1.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="heart.cpp" />
+		<Unit filename="heart.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="resource.h" />
+		<Unit filename="textobject.cpp" />
+		<Unit filename="textobject.h" />
+		<Unit filename="threats.cpp" />
+		<Unit filename="threats.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
